@@ -12,3 +12,6 @@ jobs:
 
     - name: Run clang-format script
       run: scripts/clang_format.sh
+
+    - name: Run black-format script
+      run: scripts/black_format.sh
