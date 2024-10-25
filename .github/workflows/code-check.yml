@@ -1,0 +1,14 @@
+name: CodeCheck
+
+on: [push, pull_request]
+
+jobs:
+  clang-format:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run clang-format script
+      run: scripts/clang_format.sh
